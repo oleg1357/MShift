@@ -205,8 +205,8 @@ const Display = styled.div`
 const Heart = (props) => (
   <Display>
     <Art width={13} height={12} pixelWidth={20} pixelHeight={20}>
-      {data.map((i) => (
-        <Pixel color={i} />
+      {data.map((i, index) => (
+        <Pixel color={i} key={index} />
       ))}
     </Art>
     <h1>You didn't like anything yet</h1>
